@@ -1,0 +1,29 @@
+15.03.
+deklarativno pro. - bitno je sta treba uraditi
+imperativno prog. je usmereno na kako treba uraditi
+funkcionalno programiranje pripada deklaativnom programiranju
+	-immutability kreiranje nove strukture tako da star STRUKURA NE BIVA PROMENJENA
+	-pure function - uvek vraca nesto; nema side efekte(ne menja globalne promenljive)
+	-data transformations - cini da kod bude manje kompleksan
+-high order functions - uzimaju f-je za argumente, vracaju f-je,oba
+-recursion - pojava da f-ja koristi sebe samu; pretrazivanje struktura
+____________________________________________________________________________________________________
+
+sve je moguce kada je JavaScript u pitanju
+
+---single page aplication--- gmail
+
+spa - ucitavaju jednu html stranicu, ali korisnik ima utisak da je na mpa
+-its fast
+-nisu bezbedne
+-sporo prvo ucitavanje
+
+---react---
+
+-optimizovana je da pravi sto brzi ui
+-najsporija stvar jeste menjanje sadrzaja na stranici
+-mi kazemo sta, a react zna kako
+-reaguje na promene
+-
+
+
