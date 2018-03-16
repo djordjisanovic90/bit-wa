@@ -26,4 +26,28 @@ spa - ucitavaju jednu html stranicu, ali korisnik ima utisak da je na mpa
 -reaguje na promene
 -
 
+16.03. MMXVIII
+----------------------------------------------------------------react--intro-----------------------------------------------------------------------------
+
+react, reat dom
+es5 i es6
+-babel
+-virtual dom
+	-promena velikih komada koda kroz rendering jeste nesto sto react podrzava
+	-pri bilo kojoj promeni ucitava se cela stranica iznova i iznova
+		-poredjenje starog i promenjenog koda
+		-znaci- ne menja se pojedinacni element, tj ne ucitava, vec se ucitava kompletna struktura
+	- korisnik je uvek na istoj strani, ali postoji privid da nije tako
+	//klijentska navigacija
+	-
+
+---react elements---
+
+-to je opis onoga sto ce biti napravljeno u dom-u....znaci-ne kreira se direktno element vec se zadaje opis istog
+	-ne postoji modifikacija, vec samo kreiranje
+
+---reactDOM---
+-renderuje se samo jednom, jedan element, a ostali koji su sadrzani se ukomponuju unutra....ugnjezdavanje
+-!!!!!!!!!!!!!!!!map()!!!!!!!!!!!!!!!!!--kreiranje elemenata putom izraza kojim se poziva kreiranje elementa
+-key je svojstvo koje je neophodno za update-ovanje efikasnosti doma.
 
