@@ -1,28 +1,22 @@
 import React, { Component } from 'react';
 import usersData from '../entities/users';
-import Header from './partials/header';
 import Footer from './partials/footer';
-import UserList from './userList/userList';
-import {userService} from './../services/UserService';
-import UserGrid from "./userList/userGrid";
+// import UserList from './userList/userList';
+// import {userService} from './../services/UserService';
+// import UserGrid from "./userList/userGrid"
+import {Switch, Route, Redirect} from "react-router-dom"
+import Home from './../entities/home';
+import About from './../entities/about';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { selected: false }
-  }
-
-  handleChange = (event) => {
-    this.setState((prevState, props) => {
-      return {selected: !prevState.selected}
-    });
-  }
+class App extends Component{
 
   render() {
     return (
           <div>
-            <Header handleChange={this.handleChange}/>
-            {(this.state.selected) ? <UserList items={usersData}/> : <UserGrid items={usersData}/>}
+            <Switch>
+              <Route exact path="/home" component={Home}/>
+              <Route exact path="/about" component={About}/>
+            </Switch>
             <Footer/>
           </div>
           )
